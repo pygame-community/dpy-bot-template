@@ -1,5 +1,5 @@
 # Bot
-A template repository that defines the structure for current and future Python bot projects using discord.py. This README can be fully replaced with that of a target bot project using this template.
+A template repository that defines the structure for current and future Python bot projects using `discord.py`. This README can be fully replaced with that of a target bot project using this template.
 
 ## Configuration files
 Two more files called `bot-config.json` and `startup-config.json` can be used to provide information required for the bot to run.

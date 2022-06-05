@@ -17,7 +17,7 @@ This file is meant to hold the configuration settings, credentials and API endpo
 ```
 
 ### `startup-config.json`
-This is an example for the structure of the file. `"name"` and `"package"` match the names of the `name` and `package` arguments in the `discord.ext.commands.Bot.load_extension` method. `"options"` can be used as a way to provide arguments to extensions while they load.
+This is an example for the structure of the file. `"name"` and `"package"` match the names of the `name` and `package` arguments in the `discord.ext.commands.Bot.load_extension` method. `"options"` can be used as a way to provide arguments to extensions while they load. For ease of use, a CLI interface could be made which allows for selectively overriding or excluding options from this file while the bot application is starting.
 ```json
 {
     "mode": "debug",

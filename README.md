@@ -10,8 +10,10 @@ This file is meant to hold the configuration settings, credentials and API endpo
 
 ```json
 {
-    "bot_id": 1234567891011121314,
-    "bot_token": "....",
+    "bot": {
+        "client_id": 1234567891011121314,
+        "token": "...."
+    },
     "database": {
         "postgresql_address": "postgresql://user:password@host/database",
         "sqlite_db": ".../database.db",

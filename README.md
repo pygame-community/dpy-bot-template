@@ -23,7 +23,7 @@ This file is meant to hold the configuration settings, credentials and API endpo
         "exts": [
             {
                 "name": ".exts.local_extension",
-                "package" "bot",
+                "package": "bot",
                 "options": {
                     "a": 1,
                     "b": 2

@@ -6,7 +6,7 @@ Two files called `bot-config.json` and `launch-config.json` can be used to provi
 
 
 ### `bot-config.json`
-This file is meant to hold the configuration settings, credentials and API endpoints of the bot application, as well as customize runtime behavior. `"client_id"` and `"token"` are meant to be mandatory, whilst others can be fully up to the implementation. For projects that use hosting solutions based on ephemeral file systems, credentials stored within the `"auth"` object like `"client_id"` and `"token"` can be turned into uppercase environment variables prefixed with `AUTH_` (e.g. `AUTH_CLIENT_ID` and `AUTH_TOKEN`). A similar approach can be used for `db` The `bot-config.json` (excluding credentials and sensitive information) file can also be added to the project's git repository to preserve it in those cases. 
+This file is meant to hold the configuration settings, credentials and API endpoints of the bot application, as well as customize runtime behavior. `"client_id"` and `"token"` are meant to be mandatory, whilst others can be fully up to the implementation. For projects that use hosting solutions based on ephemeral file systems, credentials stored within the `"auth"` object like `"client_id"` and `"token"` can be turned into uppercase environment variables prefixed with `AUTH_` (e.g. `AUTH_CLIENT_ID` and `AUTH_TOKEN`) instead. A similar approach can be used for `db` The `bot-config.json` (excluding credentials and sensitive information) file can also be added to the project's git repository to preserve it in those cases. 
 
 ```json
 {
@@ -22,7 +22,8 @@ This file is meant to hold the configuration settings, credentials and API endpo
 }
 ```
 
-## `launch-config.json`
+
+### `launch-config.json`
 This file is meant to customize the launching/startup process of the bot application. For the objects within the `"exts"` (extensions) array, the `"name"` and `"package"` keys match the names of the `name` and `package` arguments in the `discord.ext.commands.Bot.load_extension` method and the values are meant to be forwarded to it, during startup. `"options"` can be used as a way to provide arguments to extensions while they load. For ease of use, a CLI interface could be provided which allows for selectively overriding or excluding options from this file while the bot application is starting.
 
 ```json

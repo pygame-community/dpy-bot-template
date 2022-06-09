@@ -6,7 +6,7 @@ Two files called `bot-config.json` and `launch-config.json` can be used to provi
 
 
 ### `bot-config.json`
-This file is meant to hold the configuration settings, credentials and API endpoints of the bot application, as well as customize runtime behavior. `"client_id"` and `"token"` are meant to be mandatory, whilst others can be fully up to the implementation. For projects that use hosting solutions based on ephemeral file systems, credentials stored within the `"auth"` object like `"client_id"` and `"token"` can be turned into uppercase environment variables prefixed with `AUTH_` (e.g. `AUTH_CLIENT_ID` and `AUTH_TOKEN`) instead. A similar approach can be used for `db` The `bot-config.json` (excluding credentials and sensitive information) file can also be added to the project's git repository to preserve it in those cases. 
+This file is meant to hold the configuration settings, credentials and API endpoints of the bot application, as well as customize runtime behavior. `"client_id"` and `"token"` are meant to be mandatory, whilst others can be fully up to the implementation. For projects that use hosting solutions based on ephemeral file systems, credentials stored within the `"auth"` object like `"client_id"` and `"token"` can be turned into uppercase environment variables prefixed with `AUTH_` (e.g. `AUTH_CLIENT_ID` and `AUTH_TOKEN`) instead. A similar approach can be used for the credentials within `db`. The `bot-config.json` (excluding credentials and sensitive information) file can also be added to the project's git repository to preserve it in those cases. 
 
 ```json
 {

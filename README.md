@@ -24,7 +24,7 @@ This file is meant to hold the configuration settings, credentials and API endpo
 
 
 ### `launch-config.json`
-This file is meant to customize the launching/startup process of the bot application. For the objects within the `"exts"` (extensions) array, the `"name"` and `"package"` keys match the names of the `name` and `package` arguments in the `discord.ext.commands.Bot.load_extension` method and the values are meant to be forwarded to it, during startup. `"options"` can be used as a way to provide arguments to extensions while they load. For ease of use, a CLI interface could be provided which allows for selectively overriding or excluding options from this file while the bot application is starting.
+This file is meant to customize the launching/startup process of the bot application. For the objects within the `"exts"` (extensions) array, the `"name"` and `"package"` keys match the names of the `name` and `package` arguments in the `discord.ext.commands.Bot.load_extension` method and the values are meant to be forwarded to it, during startup. `"variables"` can be used as a way to provide keyword arguments to extensions while they load. For ease of use, a CLI interface could be provided which allows for selectively overriding or excluding options from this file while the bot application is starting.
 
 ```json
 {
@@ -32,7 +32,7 @@ This file is meant to customize the launching/startup process of the bot applica
         {
             "name": ".exts.local_extension",
             "package": "bot",
-            "options": {
+            "variables": {
                 "a": 1,
                 "b": 2
             }
@@ -43,7 +43,7 @@ This file is meant to customize the launching/startup process of the bot applica
         },
         {
             "name": "global_extension",
-            "options": {
+            "variables": {
                 "c": 1,
                 "d": 2
             }

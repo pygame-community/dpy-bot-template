@@ -18,7 +18,7 @@ When loaded, bot applications should only need to search for the `CONFIG` dictio
     },
     "db": {
         "postgresql_address": "postgresql://user:password@host/database",
-        "sqlite_db": ".../database.db",
+        "sqlite_db": "../../database.db",
         "...": "..."
     }
 })

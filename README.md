@@ -14,7 +14,8 @@ When loaded, bot applications should only need to search for the `CONFIG` dictio
 (CONFIG := {
     "auth": {
         "client_id": 1234567891011121314,
-        "token": "...."
+        "token": "....",
+        "...": "..."
     },
     "db": {
         "postgresql_address": "postgresql://user:password@host/database",

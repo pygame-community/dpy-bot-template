@@ -2,7 +2,7 @@
 A template repository that defines the structure for current and future Python bot projects using `discord.py`. This README can be fully replaced with that of a target bot application using this template.
 
 ## Configuration
-Two files called `config_bot.py` and `config_launch.py` can be used to provide information required for the bot to run.
+Two files called `config_bot.py` and `config_launch.py` can be used to provide information required for the bot to run. These files are meant to be stored locally on host machines without being 'added' to a Git repository. However, this suggestion may be ignored for workflows that don't permit it.  
 
 
 ### `config_bot.py`

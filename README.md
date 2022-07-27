@@ -11,7 +11,7 @@ This file is meant to hold the configuration settings, credentials and API endpo
 When loaded, bot applications should only need to search for the `CONFIG` dictionary.
 
 ```py
-(CONFIG := {
+(CONFIG_BOT := {
     "auth": {
         "client_id": 1234567891011121314,
         "token": "....",
@@ -31,7 +31,7 @@ This file is meant to customize the launching/startup process of the bot applica
 When loaded, bot applications should only need to search for the `CONFIG` dictionary.
 
 ```py
-(CONFIG := {
+(CONFIG_LAUNCH := {
     "exts": [
         {
             "name": ".exts.local_extension",

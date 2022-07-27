@@ -26,7 +26,7 @@ When loaded, bot applications should only need to search for the `CONFIG` dictio
 ```
 
 ### `config_launch.py`
-This file is meant to customize the launching/startup process of the bot application. For the dictionaries within the `"exts"` (extensions) list, the `"name"` and `"package"` keys match the names of the `name` and `package` arguments in the `discord.ext.commands.Bot.load_extension` method and the values are meant to be forwarded to it, during startup. `"variables"` can be used as a way to provide keyword arguments to extensions while they load, if supported. For ease of use, a CLI interface could be provided which allows selectively overriding or excluding options from this file when launching a bot application. Depending on the desired workflow, this file may also be added to the Git repository of a bot project.
+This file is meant to customize the launching/startup process of the bot application. For the dictionaries within the `"exts"` (extensions) list, the `"name"` and `"package"` keys match the names of the `name` and `package` arguments in the [`discord.ext.commands.Bot.load_extension`](https://discordpy.readthedocs.io/en/latest/ext/commands/api.html#discord.ext.commands.Bot.load_extension) method and the values are meant to be forwarded to it, during startup. `"variables"` can be used as a way to provide keyword arguments to extensions while they load, if supported. For ease of use, a CLI interface could be provided which allows selectively overriding or excluding options from this file when launching a bot application. Depending on the desired workflow, this file may also be added to the Git repository of a bot project.
 
 When loaded, bot applications should only need to search for the `CONFIG` dictionary.
 
